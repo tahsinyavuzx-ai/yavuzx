@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-dark-card border border-dark-border rounded-lg p-6 hover:border-gray-700 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-dark-card hover:bg-dark-hover border border-dark-border text-white rounded-lg transition-colors font-medium;
+  }
+  
+  .signal-buy {
+    @apply bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold;
+  }
+  
+  .signal-sell {
+    @apply bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold;
+  }
+  
+  .signal-hold {
+    @apply bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold;
+  }
+}
